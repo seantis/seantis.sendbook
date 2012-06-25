@@ -7,7 +7,8 @@
       <property name="description" i18n:translate=""></property>
       <property name="url_expr">string:$object_url/sendbook</property>
       <property name="icon_expr"></property>
-      <property name="available_expr">python:context.restrictedTraverse('@@plone_interface_info').provides('ftw.book.interfaces.IBook')</property>
+      <property name="available_expr">python:context.restrictedTraverse('@@plone_interface_info').provides('ftw.book.interfaces.IBook') or 
+                                             context.restrictedTraverse('@@plone_interface_info').provides('ftw.book.interfaces.IChapter')</property>
       <property name="permissions">
         <element value="Allow sendto"/>
       </property>
