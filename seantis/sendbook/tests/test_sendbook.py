@@ -15,12 +15,17 @@ class DummyAssembler(object):
     
     def build_pdf(self):
         return u'File content'
+        
+class DummyContext(object):
+    
+    id = 'test_book'
+
 
 class SendbookFormTests(TestCase):
     
     def test_compose_mail(self):
         provideAdapter(DummyAssembler)
-        context = object()
+        context = DummyContext()
         request = self.portal.REQUEST
         form = SendbookForm(context, request)
         msg = form.compose_mail('sender@example.com', 'receiver@example.com')
@@ -30,3 +35,4 @@ class SendbookFormTests(TestCase):
         self.assertEqual('text/plain', text_part.get_content_type())
         pdf_part = msg.get_payload()[1]
         self.assertEqual('application/octet-stream', pdf_part.get_content_type())
+        self.assertEqual('test_book.pdf', pdf_part.get_filename())

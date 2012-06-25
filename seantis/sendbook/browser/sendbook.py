@@ -61,7 +61,8 @@ class SendbookForm(form.Form):
         msg.attach(part)
         # PDF attachement
         part = MIMEApplication(pdf_file)
-        part.add_header('Content-Disposition', 'attachment', filename='book.pdf')
+        filename = '%s.pdf' % self.context.id
+        part.add_header('Content-Disposition', 'attachment', filename=filename)
         msg.attach(part)
         return msg
 
