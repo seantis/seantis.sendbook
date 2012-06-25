@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-06-25 09:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./browser/sendbook.py:56
+msgid "Book"
+msgstr ""
+
+#: ./browser/sendbook.py:60
+msgid "Book PDF attached"
+msgstr ""
+
+#: ./browser/sendbook.py:87
+msgid "Cancel"
+msgstr ""
+
+#: ./browser/sendbook.py:84
+msgid "Error while sending email."
+msgstr ""
+
+#: ./browser/sendbook.py:19
+msgid "Invalid email address"
+msgstr ""
+
+#: ./profiles/default/actions.xml
+msgid "Mail PDF"
+msgstr ""
+
+#: ./browser/sendbook.py:80
+msgid "Message sent."
+msgstr ""
+
+#: ./browser/sendbook.py:68
+msgid "Send"
+msgstr ""
+
+#. Default: "Send a PDF of the current book as email attachment."
+#: ./browser/sendbook.py:47
+msgid "form_description"
+msgstr "Send a PDF of the current book as email attachment."
+
+#. Default: "Send book as email attachment"
+#: ./browser/sendbook.py:46
+msgid "form_label"
+msgstr "Send book as email attachment"
+
+#: ./browser/sendbook.py:36
+msgid "receiver_description"
+msgstr "Email address of the receiver"
+
+#. Default: "Receiver"
+#: ./browser/sendbook.py:35
+msgid "receiver_title"
+msgstr "Receiver"
+
+#: ./browser/sendbook.py:32
+msgid "sender_description"
+msgstr "Your email address."
+
+#. Default: "Sender"
+#: ./browser/sendbook.py:31
+msgid "sender_title"
+msgstr "Sender"
+

@@ -29,11 +29,11 @@ class ISendbookForm(interface.Interface):
     """ Define form fields """
 
     sender = schema.TextLine(title=_('sender_title', default=u'Sender'),
-                            description=_('sender_description', default=''),
+                            description=_('sender_description', default=u''),
                             required=True,
                             constraint=validateaddress)
     receiver = schema.TextLine(title=_('receiver_title', default=u'Receiver'),
-                            description=_('receiver_title', default=''),
+                            description=_('receiver_description', default=u''),
                             required=True,
                             constraint=validateaddress)
     
@@ -43,9 +43,8 @@ class SendbookForm(form.Form):
 
     fields = field.Fields(ISendbookForm)
     ignoreContext = True
-    label = _('label_form', default=u'Send book as email attachment')
-    description = _('description_form', 
-            default=u'Send a PDF of the current book as email attachment.')
+    label = _('form_label', default=u'Send book as PDF')
+    description = _('form_description', default=u'')
     
     def compose_mail(self, sender, receiver):
         # Create PDF file
