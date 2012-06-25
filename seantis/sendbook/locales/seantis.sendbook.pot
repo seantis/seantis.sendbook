@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-06-25 09:12+0000\n"
+"POT-Creation-Date: 2012-06-25 18:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,11 @@ msgstr ""
 msgid "Book PDF attached"
 msgstr ""
 
-#: ./browser/sendbook.py:87
+#: ./browser/sendbook.py:88
 msgid "Cancel"
 msgstr ""
 
-#: ./browser/sendbook.py:84
+#: ./browser/sendbook.py:85
 msgid "Error while sending email."
 msgstr ""
 
@@ -41,34 +41,40 @@ msgstr ""
 msgid "Mail PDF"
 msgstr ""
 
-#: ./browser/sendbook.py:80
+#: ./browser/sendbook.py:81
 msgid "Message sent."
 msgstr ""
 
-#: ./browser/sendbook.py:68
+#: ./browser/sendbook.py:69
 msgid "Send"
 msgstr ""
 
+#. Default: "With this form you can send the entire book as an email attachement or the current chapter of the book respectively."
 #: ./browser/sendbook.py:47
 msgid "form_description"
 msgstr ""
 
+#. Default: "Send book as PDF"
 #: ./browser/sendbook.py:46
 msgid "form_label"
 msgstr ""
 
+#. Default: "Enter the email address where the document should be sent to."
 #: ./browser/sendbook.py:36
 msgid "receiver_description"
 msgstr ""
 
+#. Default: "Receiver"
 #: ./browser/sendbook.py:35
 msgid "receiver_title"
 msgstr ""
 
+#. Default: "Enter your email address. It will be shown as the senders email."
 #: ./browser/sendbook.py:32
 msgid "sender_description"
 msgstr ""
 
+#. Default: "Sender"
 #: ./browser/sendbook.py:31
 msgid "sender_title"
 msgstr ""

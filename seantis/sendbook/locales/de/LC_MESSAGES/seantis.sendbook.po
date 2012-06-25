@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-06-25 09:12+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-06-25 18:26+0000\n"
+"PO-Revision-Date: 2012-06-25 20:32+0100\n"
+"Last-Translator: Fabian Reinhard <fabian.reinhard@seantis.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -16,59 +16,63 @@ msgstr ""
 
 #: ./browser/sendbook.py:56
 msgid "Book"
-msgstr ""
+msgstr "Buch"
 
 #: ./browser/sendbook.py:60
 msgid "Book PDF attached"
-msgstr ""
+msgstr "Buch PDF Anhang"
 
-#: ./browser/sendbook.py:87
+#: ./browser/sendbook.py:88
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
-#: ./browser/sendbook.py:84
+#: ./browser/sendbook.py:85
 msgid "Error while sending email."
-msgstr ""
+msgstr "Fehler beim Senden des Emails."
 
 #: ./browser/sendbook.py:19
 msgid "Invalid email address"
-msgstr ""
+msgstr "Ungültige Emailadresse"
 
 #: ./profiles/default/actions.xml
 msgid "Mail PDF"
-msgstr ""
+msgstr "PDF senden"
 
-#: ./browser/sendbook.py:80
+#: ./browser/sendbook.py:81
 msgid "Message sent."
-msgstr ""
+msgstr "Email gesendet."
 
-#: ./browser/sendbook.py:68
+#: ./browser/sendbook.py:69
 msgid "Send"
-msgstr ""
+msgstr "Senden"
 
+#. Default: "With this form you can send the entire book as an email attachement or the current chapter of the book respectively."
 #: ./browser/sendbook.py:47
 msgid "form_description"
-msgstr ""
+msgstr "Mit diesem Formular kann das gesamte Buch bzw. ein Kapitel als PDF Anhang verschickt werden."
 
+#. Default: "Send book as PDF"
 #: ./browser/sendbook.py:46
 msgid "form_label"
-msgstr ""
+msgstr "Buch als PDF senden"
 
+#. Default: "Enter the email address where the document should be sent to."
 #: ./browser/sendbook.py:36
 msgid "receiver_description"
-msgstr ""
+msgstr "Emailadresse an welche das Dokument gesendet werden soll."
 
 #. Default: "Receiver"
 #: ./browser/sendbook.py:35
 msgid "receiver_title"
-msgstr ""
+msgstr "Empfänger"
 
+#. Default: "Enter your email address. It will be shown as the senders email."
 #: ./browser/sendbook.py:32
 msgid "sender_description"
-msgstr ""
+msgstr "Emailadresse eingeben. Diese Adresse wird als Absender angezeigt."
 
 #. Default: "Sender"
 #: ./browser/sendbook.py:31
 msgid "sender_title"
-msgstr ""
+msgstr "Absender"
 
