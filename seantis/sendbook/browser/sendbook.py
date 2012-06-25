@@ -28,10 +28,12 @@ def validateaddress(value):
 class ISendbookForm(interface.Interface):
     """ Define form fields """
 
-    sender = schema.TextLine(title=_(u'Sender'), 
+    sender = schema.TextLine(title=_('sender_title', default=u'Sender'),
+                            description=_('sender_description', default=''),
                             required=True,
                             constraint=validateaddress)
-    receiver = schema.TextLine(title=_(u'Receiver'), 
+    receiver = schema.TextLine(title=_('receiver_title', default=u'Receiver'),
+                            description=_('receiver_title', default=''),
                             required=True,
                             constraint=validateaddress)
     
@@ -41,6 +43,9 @@ class SendbookForm(form.Form):
 
     fields = field.Fields(ISendbookForm)
     ignoreContext = True
+    label = _('label_form', default=u'Send book as email attachment')
+    description = _('description_form', 
+            default=u'Send a PDF of the current book as email attachment.')
     
     def compose_mail(self, sender, receiver):
         # Create PDF file
