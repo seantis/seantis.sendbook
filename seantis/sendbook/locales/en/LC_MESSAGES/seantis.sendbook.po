@@ -48,15 +48,13 @@ msgstr ""
 
 #. Default: "With this form you can send the entire book as an email attachement or the current chapter of the book respectively."
 #: ./browser/sendbook.py:47
-#, fuzzy
 msgid "form_description"
-msgstr "Send a PDF of the current book as email attachment."
+msgstr "With this form you can send the entire book as an email attachement or the current chapter of the book respectively."
 
 #. Default: "Send book as PDF"
 #: ./browser/sendbook.py:46
-#, fuzzy
 msgid "form_label"
-msgstr "Send book as email attachment"
+msgstr "Send book as PDF"
 
 #. Default: "Enter the email address where the document should be sent to."
 #: ./browser/sendbook.py:36
