@@ -18,7 +18,7 @@ CURRENT_PATH=`pwd`
 CATALOGNAME="seantis.sendbook"
 
 # List of languages
-LANGUAGES="en de"
+LANGUAGES="en de fr"
 
 # Create locales folder structure for languages
 install -d locales
