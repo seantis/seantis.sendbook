@@ -26,7 +26,7 @@ class SendbookFormTests(TestCase):
     def test_compose_mail(self):
         provideAdapter(DummyAssembler)
         context = DummyContext()
-        request = self.portal.REQUEST
+        request = self.layer['request']
         form = SendbookForm(context, request)
         msg = form.compose_mail('sender@example.com', 'receiver@example.com')
         self.assertEqual('sender@example.com', msg['From'])

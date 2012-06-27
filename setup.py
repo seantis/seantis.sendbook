@@ -23,12 +23,17 @@ setup(name='seantis.sendbook',
       namespace_packages=['seantis'],
       include_package_data=True,
       zip_safe=False,
+      
       install_requires=[
           'setuptools',
           'plone.app.z3cform',
           'ftw.book',
-          # -*- Extra requirements: -*-
       ],
+      
+      tests_require=[
+          'plone.app.testing',
+      ],
+      
       entry_points="""
       # -*- Entry points: -*-
 

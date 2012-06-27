@@ -1,23 +1,6 @@
-from Testing import ZopeTestCase as ztc
+from Products.PloneTestCase.ptc import PloneTestCase
+from seantis.sendbook.tests.layer import SENDBOOK_INTEGRATION_TESTING
 
-from Products.Five import fiveconfigure
-from Products.PloneTestCase import PloneTestCase as ptc
-from Products.PloneTestCase.layer import PloneSite
-ptc.setupPloneSite()
+class TestCase(PloneTestCase):
 
-import seantis.sendbook
-
-
-class TestCase(ptc.PloneTestCase):
-
-    class layer(PloneSite):
-
-        @classmethod
-        def setUp(cls):
-            fiveconfigure.debug_mode = True
-            ztc.installPackage(seantis.sendbook)
-            fiveconfigure.debug_mode = False
-
-        @classmethod
-        def tearDown(cls):
-            pass
+    layer = SENDBOOK_INTEGRATION_TESTING
